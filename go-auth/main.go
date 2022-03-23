@@ -8,7 +8,7 @@ import (
 
 func main() {
 	app := fiber.New()
-	_, err := gorm.Open(mysql.Open("root@Sunlight@123@/go_auth"), &gorm.Config{})
+	_, err := gorm.Open(mysql.Open(""), &gorm.Config{})
 	if err != nil {
 		panic("could not connect to to the database")
 	}
